@@ -1,11 +1,16 @@
-from flask import Flask, jsonify, request, Response
+from flask import Flask, jsonify, request, Response,render_template
 from typing import Dict, Any
 from utils import save_response_to_file,load_data_from_file  # Import the function
 
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/home')
+def home():
+    return render_template('./frontend/home.html')
+
+
+@app.route('/list', methods=['GET'])
 def home() -> Response:
 
     resp = load_data_from_file( 'response.json')
