@@ -133,3 +133,14 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+# Virtual environment
+backend-fastapi/
+backend-fastapi/envname/

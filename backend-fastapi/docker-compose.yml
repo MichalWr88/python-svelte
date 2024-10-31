@@ -1,0 +1,8 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "8084:8084"
+    volumes:
+      - .:/app  # Mount current directory to /app in container for live reload
