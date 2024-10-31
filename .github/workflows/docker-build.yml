@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: p291
+    runs-on: self-hosted
     strategy:
         fail-fast: true
     steps:
