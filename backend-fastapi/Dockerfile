@@ -5,13 +5,13 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+COPY ./backend-fastapi/ ./app
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-COPY ./backend-fastapi ./app
+# COPY ./backend-fastapi ./app
 
 # Expose port 80 for the application
 EXPOSE 8084
