@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-COPY ./app ./app
+COPY ./backend-fastapi ./app
 
 # Expose port 80 for the application
 EXPOSE 8084
